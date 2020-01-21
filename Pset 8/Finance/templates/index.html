@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+    <table class="table table-bordered">
+        <thead>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total</th>
+        </thead>
+        <tbody>
+            {% for transaction in portfolio %}
+            <tr>
+                <td>{{ transaction.symbol }}</td>
+                <td>{{ transaction.shareAmount }}</td>
+                <td>${{ "%.2f"|format(transaction.price) }}</td>
+                <td>${{ "%.2f"|format(transaction.price * transaction.shareAmount) }}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td>Balance Remaining:</td>
+                <td>${{ "%.2f"|format(availableCash) }}</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

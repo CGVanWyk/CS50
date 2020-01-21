@@ -1,0 +1,244 @@
+/* Fonts */
+
+@import 'fonts.css';
+
+/* Styles */
+
+h1, h3
+{
+    font-size: 35px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-weight: normal;
+}
+
+h1
+{
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+h3
+{
+	width: 100%;
+	margin-top: 0;
+	font-size: 40px;
+	text-align: center;
+}
+
+h1:first-letter
+{
+	color: #dca453;
+}
+
+.container
+{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header nav {
+    position: fixed;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    z-index: 999;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+header nav ul.navigation
+{
+	display: flex;
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul.navigation li a
+{
+    display: block;
+    padding: 0 16px;
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+header nav ul.navigation li a:hover:after
+{
+    width: 100%;
+    opacity: 1;
+}
+
+ul.navigation
+{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    background: rgba(0,0,0,.7);
+    -webkit-transition: max-height .4s ease;
+    transition: max-height .4s ease;
+}
+
+ul.navigation.navigation-opened
+{
+	max-height: 500px;
+	-webkit-transition: max-height 1s ease;
+    transition: max-height 1s ease;
+}
+
+ul.navigation li
+{
+    padding: 0 15px;
+}
+
+ul.navigation li a
+{
+	display: block;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.mainBanner
+{
+	display: block;
+	width: 100%;
+}
+
+.rotated
+{
+    transform: rotate(90deg);
+}
+
+#about .column
+{
+	width: 48%;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.columnAbout
+{
+    width: 100%;
+}
+
+.column {
+    padding-top: 30px;
+}
+
+#about i
+{
+	font-size: 45px;
+    color: #dca453;
+}
+
+#aboutMe
+{
+    margin-left: 460px;
+    font-style: italic;
+    font-size: 20px;
+    color: #ccc;
+    text-align: center;
+}
+
+p#aboutMe
+{
+    position: relative;
+    bottom: 135px;
+}
+
+.resizedAbout
+{
+    max-width: 15%;
+    margin-left: 450px;
+    margin-top: 100px;
+}
+
+.aw-testimonials
+{
+	position: relative;
+    max-width: 500px;
+}
+
+.aw-testimonials ul
+{
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.aw-testimonials ul li
+{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aw-testimonials ul li .aw-user-data img
+{
+    border-radius: 100%;
+}
+
+.aw-testimonials ul li .aw-user-name
+{
+	display: block;
+    margin: 15px 0;
+}
+
+.aw-testimonials ul li > p
+{
+    font-style: italic;
+    font-size: 20px;
+    color: #ccc;
+    text-align: center;
+}
+
+.aw-testimonials .aw-arrow
+{
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+    padding: 20px;
+    border: solid #eee;
+    border-width: 0 3px 3px 0;
+    cursor: pointer;
+    -webkit-transition: border-color .3s ease;
+    transition: border-color .3s ease;
+}
+
+.aw-testimonials .aw-arrow.aw-arrow-left
+{
+	right: 120%;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.aw-testimonials .aw-arrow.aw-arrow-right
+{
+	left: 120%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.aw-testimonials .aw-arrow:hover
+{
+	border-color: #dca453;
+}
+
+.contact
+{
+    vertical-align: center;
+    text-align: center;
+    margin-top: 100px;
+}
