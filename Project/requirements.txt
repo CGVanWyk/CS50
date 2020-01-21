@@ -1,3 +1,4 @@
 cs50
-flask
-openpyxl
+openpyxl==2.5.12
+Flask
+gunicorn
