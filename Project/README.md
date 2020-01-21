@@ -2,7 +2,7 @@ For Linux users:
 Make sure to rename app.py to application.py before running
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Installing the requirements:
-You can use pip to install all everything inside of requirements.txt.
+You can use pip to install everything inside of requirements.txt.
 Simply use pip install "package".
 For example, pip install cs50.
 Use "flask run" to run the application, then visit "http://127.0.0.1:5000/" on your web browser.
