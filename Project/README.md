@@ -3,7 +3,7 @@ Make sure to rename app.py to application.py before running
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Installing the requirements:
 You can use pip to install all everything inside of requirements.txt.
-Simply use pip install <package>
+Simply use pip install "package".
 example, pip install cs50
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 About the project:
